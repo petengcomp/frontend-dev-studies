@@ -7,12 +7,16 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage:{
-        bola: "url('/bola.png')"
+        bola: "url('/bola.png')",
       },
       colors:{
         rosinha: "#FFB3B3"
+      },
+      fontFamily:{
+        russ: "'Russo One', sans-serif;"
       }
     },
   },
+
   plugins: [],
 }

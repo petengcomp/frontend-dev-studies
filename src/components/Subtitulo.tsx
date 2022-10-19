@@ -1,3 +1,7 @@
-export default function subtitulo(props: { text: string;}){
-    return <h1 className="text-rosinha text-4xl font-mono">{props.text}</h1>
+interface Props{
+    text: string;
+}
+
+export default function subtitulo({text}:Props){
+    return <h1 className="text-rosinha text-4xl font-russ">{text}</h1>
 }
