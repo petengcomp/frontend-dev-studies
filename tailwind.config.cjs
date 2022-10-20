@@ -14,6 +14,9 @@ module.exports = {
       },
       fontFamily:{
         russ: "'Russo One', sans-serif;"
+      },
+      boxShadow: {
+        playButton: "0px 10.2857px 10.2857px rgba(0, 0, 0, 0.25);"
       }
     },
   },
