@@ -15,19 +15,13 @@ function App() {
 
     let child = $("#logo").children();
 
-    let coordinicial = child.offset()
-
     if(coordenadas && sizew && sizeh && event.pageX > coordenadas.left && event.pageX < coordenadas.left + sizew && event.pageY > coordenadas.top && event.pageY < coordenadas.top + sizeh)
     // tirando o teleporte
     child.css({
-      "margin-left": -(event.pageX * 0.1),
-      "margin-top": -(event.pageY * 0.1)
+      "margin-left": -(event.pageX - (coordenadas.left+sizew/2))*0.05,
+      "margin-top": -(event.pageY - (coordenadas.top + sizeh/2))*0.05
     });
 
-    else if(coordinicial) child.css({
-      "margin-left": 0,
-      "margin-top": 0
-    });
 
   });
 
@@ -42,10 +36,10 @@ function App() {
               <Button text="<code/>" icon={play}/>
             </div>
            </div>
-           <div className='w-[30%] flex justify-center' id='logo'>
-            <img className='pt-20 pl-10'  src={logo} alt="logo" />
+           <div className='w-[40%] flex justify-center' id='logo'>
+            <img src={logo} alt="logo" />
           </div>
-          <div className='w-1/5' />
+          <div className='w-[10%]' />
         </div>
       </main>
     </>
