@@ -1,5 +1,7 @@
 import Titulo from '../components/Titulo'
-import $ from 'jquery'
+import FormBox from '../components/InputFormBox';
+import FormButton from '../components/FormButton';
+
 import { useEffect } from 'react';
 
 
@@ -27,9 +29,19 @@ function Authentication() {
         <div className='w-2/5 h-screen flex float-right justify-center items-center'>
           <div className='w-3/4 h-[90%] bg-white rounded-lg flex flex-col items-center justify-center opacity-0' style={{transition: "0.5s"}} id='formDiv'>
               <Titulo text='Login' style="text-roxin text-6xl font-russ "/>
-              <div className='w-4/5 h-1 bg-roxin mt-3'/>
-              <div className='h-2/3 w-4/5 mt-6 bg-slate-400' id='form'>
-                  {/* TODO */}
+              <div className='w-4/5 h-1 bg-roxin mt-3 rounded-full'/>
+              <div className='h-2/3 w-4/5 mt-6' id='form'>
+                  <form action="" className='h-full mt-10'>
+                      <div className='flex flex-col items-center justify-evenly h-3/4'>
+                          <section className='flex flex-col w-full justify-between h-3/5'>
+                              <FormBox text='Email' type='email'/>
+                              <FormBox text='Password' type='password'/>
+                          </section>
+                          <section className='mt-20 w-full h-1/6'>
+                              <FormButton text="Entrar"/>
+                          </section>
+                      </div>
+                  </form>
               </div>
           </div>
         </div>
