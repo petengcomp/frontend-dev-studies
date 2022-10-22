@@ -1,7 +1,10 @@
 interface Props{
     text: string;
+    style?: string;
 }
 
-export default function titulo({text}:Props){
-    return <h1 className="text-white text-6xl font-russ">{text}</h1>
+// style padrao = className="text-white text-6xl font-russ"
+
+export default function titulo({text, style}:Props){
+    return style? <h1 className= {style}>{text}</h1>:<h1 className="text-white text-6xl font-russ">{text}</h1>
 }
