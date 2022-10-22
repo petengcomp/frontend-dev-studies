@@ -1,7 +1,7 @@
 interface Props{
     text: string;
     icon: string;
-    onClickFunc: () => void;
+    onClickFunc ?: () => void;
 }
 
 export default function button({text, icon, onClickFunc}:Props){

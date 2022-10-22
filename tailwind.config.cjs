@@ -10,7 +10,8 @@ module.exports = {
         bola: "url('/bola.png')",
       },
       colors:{
-        rosinha: "#FFB3B3"
+        rosinha: "#FFB3B3",
+        roxin: "#3F0250",
       },
       fontFamily:{
         russ: "'Russo One', sans-serif;"
