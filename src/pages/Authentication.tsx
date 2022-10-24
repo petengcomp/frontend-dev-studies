@@ -3,9 +3,17 @@ import FormBox from '../components/InputFormBox';
 import FormButton from '../components/FormButton';
 
 import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 function Authentication() {
+
+  let navigate = useNavigate();
+  const routeChange = () => {
+    let path = `/content`;
+    navigate(path, {replace: false});
+  }
+
   
   useEffect(() => {
     let bg = document.getElementById("bg");
@@ -38,7 +46,7 @@ function Authentication() {
                               <FormBox text='Password' type='password'/>
                           </section>
                           <section className='mt-20 w-full h-1/6'>
-                              <FormButton text="Entrar"/>
+                              <FormButton text="Entrar" onClickFunc={routeChange}/>
                           </section>
                       </div>
                   </form>

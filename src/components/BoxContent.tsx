@@ -1,4 +1,4 @@
-import { ImgHTMLAttributes } from "react";
+import { useNavigate} from "react-router-dom";
 import Titulo from "./Titulo";
 
 interface Props {
@@ -9,11 +9,18 @@ interface Props {
 }
 
 export default function formBox({title, description, stack, thumbnailPath}:Props){
+    
+    let navigate = useNavigate();
+    const routeChange = () => {
+      let path = `play`;
+      navigate(path);
+    }
+    
     return (
         <div className="flex justify-between mx-[150px] mt-20">
             <div className="h-[371px]">
                 <img src="./src/assets/caixa.svg" alt="caixa onde vai a imagem" />
-                <a href=""><img className="relative z-1 -top-[340px] left-0.5 w-[495px] h-[310px]" src={thumbnailPath} alt="nlw" /></a>
+                <a onClick={routeChange}><img className="relative z-1 -top-[340px] left-0.5 w-[495px] h-[310px] overflow-hidden" src={thumbnailPath} alt="nlw" /></a>
             </div>
             <div className="flex flex-col gap-6 items-center justify-center w-[450px]">
                 <Titulo text={title} style={'text-rosinha text-6xl font-russ'} />

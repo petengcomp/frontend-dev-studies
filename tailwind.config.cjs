@@ -9,12 +9,14 @@ module.exports = {
       backgroundImage:{
         bola: "url('/bola.png')",
         caixa: "url('/caixa.svg')",
+        retanguloPlay: "url('/retanguloPlay.svg')"
       },
       colors:{
         rosinha: "#FFB3B3",
         roxin: "#3F0250",
         roxinClaro: "rgba(63, 2, 80, 0.64)",
         cinza: "#E2E2E2",
+        laranja: "#E7561D"
       },
       fontFamily:{
         russ: "'Russo One', sans-serif;",
