@@ -5,6 +5,7 @@ import Divider from "../components/Divider";
 import YtBoxContent from "../components/YtBoxContent";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
+import '../styles/NavBar.css' 
 
 export default function Content() {
 
