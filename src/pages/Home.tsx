@@ -1,4 +1,5 @@
 import '../styles/main.css'
+import '../styles/Home.css'
 import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";
 import Subtitulo from "../components/Subtitulo";
@@ -10,11 +11,11 @@ import $ from 'jquery';
 function Home() {
     let navigate = useNavigate();
     const routeChange = () => {
-      let path = `authentication`;
+      let path = `/authentication`;
       navigate(path);
     }
 
-    $(window).mousemove(function(event) {
+    $(window).on("mousemove",function(event) {
       let coordenadas = $("#logo").offset();
       let sizew = $("#logo").width();
       let sizeh = $("#logo").height();
@@ -29,6 +30,7 @@ function Home() {
 
       });
     });
+
     $(document).ready(function() {
       $("button").on("click", function(event) {
         let logo = $("#logo").children();
@@ -55,7 +57,7 @@ function Home() {
               </div>
               </div>
               <div className='w-[35%] flex justify-center select-none' id='logo'>
-              <img src={logo}  alt="logo" />
+              <img src={logo} className="avatar" alt="logo" />
             </div>
             <div className='w-[15%]' />
           </div>
