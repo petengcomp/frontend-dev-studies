@@ -8,7 +8,7 @@ export default function Content() {
         <>
             <div className="bg-black h-full w-screen">
                 <Navbar />
-                <section id="nlw" className="mt-12 mx-10 pt-12">
+                <section id="nlw" className="mt-12 mx-10 pt-12 overflow-hidden">
                     <Titulo text="NLW's"/>
 
                     <BoxContent 
