@@ -1,14 +1,25 @@
 import Titulo from "../components/Titulo";
 import playL from "../assets/play2.svg";
 import playR from "../assets/play3.svg";
+import { useEffect } from "react";
 
 interface Props {
 
 }
 
 function Play({}: Props){
+
+    useEffect(() => {
+        let page = document.getElementById("page");
+        setTimeout(function() {  
+            if (page != null) {
+                page.style.opacity = "100%";
+            }
+        }, 200);
+    }, []);
+
     return(
-        <main className="h-screen w-screen bg-black flex flex-col">
+        <main id="page" className="h-screen w-screen bg-black flex flex-col opacity-5" style={{transition: "0.5s"}} >
             <section className="h-[15%] flex items-center justify-center">
                 <Titulo text="Aula 1 - Título da aula"/>
             </section>

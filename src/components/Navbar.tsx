@@ -1,5 +1,5 @@
 interface Props{
-
+    
 }
 
 export default function formBox({}:Props){
