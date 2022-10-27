@@ -2,10 +2,9 @@ import NlwBoxContent from "../components/NlwBoxContent";
 import Navbar from "../components/Navbar";
 import Titulo from "../components/Titulo";
 import Divider from "../components/Divider";
-import YtBoxContent from "../components/YtBoxContent";
 import { useEffect } from "react";
-import { motion } from "framer-motion";
 import '../styles/NavBar.css' 
+import YtBoxContent from "../components/YtBoxContent";
 
 export default function Content() {
 
@@ -21,7 +20,7 @@ export default function Content() {
     return (
         <div style={{transition: "0.5s"}} id='page' className="bg-black h-full w-screen opacity-5">
             <Navbar />
-            <section id="nlw" className="my-12 mx-10 pt-12 overflow-hidden">
+            <section id="nlw" className="my-12 mx-10 pt-12 overflow-hidden pb-12">
                 <Titulo text="NLW's"/>
                 <NlwBoxContent
                     title="Ignite"
@@ -37,7 +36,7 @@ export default function Content() {
                 />
             </section>
             <Divider />
-            <section id="youtube" className="mt-12 mx-10 pt-12 overflow-hidden">
+            <section id="youtube" className="mt-12 mx-10 pt-12 overflow-hidden pb-12">
                 <Titulo text="Youtube"/>
                 <div className="flex justify-between mx-[150px]">
                     <YtBoxContent
@@ -60,9 +59,96 @@ export default function Content() {
                     />
                 </div>
             </section>
-            <section id="videos-proprios"></section>
-            <section id="slides"></section>
-            <section id="livros"></section>
+            <Divider />
+            <section id="videos-proprios" className="mt-12 mx-10 pt-12 overflow-hidden pb-12">
+                <Titulo text="Vídeos Próprios"/>
+                <div className="flex justify-between mx-[150px]">
+                    <YtBoxContent
+                        title="HTML, CSS e Bootstrap"
+                        canal="Micheli Brito"
+                        thumbnailPath="./src/assets/micheli.png"
+                        link="https://youtube.com/playlist?list=PL8iIphQOyG-Cv3auRYoZtbvzJJrsvdMy-"
+                    />
+                    <YtBoxContent
+                        title="HTML, CSS e Bootstrap"
+                        canal="Micheli Brito"
+                        thumbnailPath="./src/assets/micheli.png"
+                        link="https://youtube.com/playlist?list=PL8iIphQOyG-Cv3auRYoZtbvzJJrsvdMy-"
+                    />
+                    <YtBoxContent
+                        title="HTML, CSS e Bootstrap"
+                        canal="Micheli Brito"
+                        thumbnailPath="./src/assets/micheli.png"
+                        link="https://youtube.com/playlist?list=PL8iIphQOyG-Cv3auRYoZtbvzJJrsvdMy-"
+                    />
+                </div>
+            </section>
+            <Divider />
+            <section id="slides" className="mt-12 mx-10 pt-12 overflow-hidden pb-12">
+                <Titulo text="Slides"/>
+                <div className="flex justify-between mx-[150px]">
+                    <YtBoxContent
+                        title="HTML, CSS e Bootstrap"
+                        canal="Micheli Brito"
+                        thumbnailPath="./src/assets/micheli.png"
+                        link="https://youtube.com/playlist?list=PL8iIphQOyG-Cv3auRYoZtbvzJJrsvdMy-"
+                    />
+                    <YtBoxContent
+                        title="HTML, CSS e Bootstrap"
+                        canal="Micheli Brito"
+                        thumbnailPath="./src/assets/micheli.png"
+                        link="https://youtube.com/playlist?list=PL8iIphQOyG-Cv3auRYoZtbvzJJrsvdMy-"
+                    />
+                    <YtBoxContent
+                        title="HTML, CSS e Bootstrap"
+                        canal="Micheli Brito"
+                        thumbnailPath="./src/assets/micheli.png"
+                        link="https://youtube.com/playlist?list=PL8iIphQOyG-Cv3auRYoZtbvzJJrsvdMy-"
+                    />
+                </div>
+            </section>
+            <Divider />
+            <section id="livros" className="mt-12 mx-10 pt-12 overflow-hidden pb-12">
+                <Titulo text="Livros"/>
+                <div className="flex justify-between mx-[150px] flex-wrap gap-10">
+                    <YtBoxContent
+                        title="HTML, CSS e Bootstrap"
+                        canal="Micheli Brito"
+                        thumbnailPath="./src/assets/micheli.png"
+                        link="https://youtube.com/playlist?list=PL8iIphQOyG-Cv3auRYoZtbvzJJrsvdMy-"
+                    />
+                    <YtBoxContent
+                        title="HTML, CSS e Bootstrap"
+                        canal="Micheli Brito"
+                        thumbnailPath="./src/assets/micheli.png"
+                        link="https://youtube.com/playlist?list=PL8iIphQOyG-Cv3auRYoZtbvzJJrsvdMy-"
+                    />
+                    <YtBoxContent
+                        title="HTML, CSS e Bootstrap"
+                        canal="Micheli Brito"
+                        thumbnailPath="./src/assets/micheli.png"
+                        link="https://youtube.com/playlist?list=PL8iIphQOyG-Cv3auRYoZtbvzJJrsvdMy-"
+                    />
+                    <YtBoxContent
+                        title="HTML, CSS e Bootstrap"
+                        canal="Micheli Brito"
+                        thumbnailPath="./src/assets/micheli.png"
+                        link="https://youtube.com/playlist?list=PL8iIphQOyG-Cv3auRYoZtbvzJJrsvdMy-"
+                    />
+                    <YtBoxContent
+                        title="HTML, CSS e Bootstrap"
+                        canal="Micheli Brito"
+                        thumbnailPath="./src/assets/micheli.png"
+                        link="https://youtube.com/playlist?list=PL8iIphQOyG-Cv3auRYoZtbvzJJrsvdMy-"
+                    />
+                    <YtBoxContent
+                        title="HTML, CSS e Bootstrap"
+                        canal="Micheli Brito"
+                        thumbnailPath="./src/assets/micheli.png"
+                        link="https://youtube.com/playlist?list=PL8iIphQOyG-Cv3auRYoZtbvzJJrsvdMy-"
+                    />
+                </div>
+            </section>
         </div>
     )
 }

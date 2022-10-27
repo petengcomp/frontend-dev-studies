@@ -26,7 +26,7 @@ function Play({}: Props){
             <section className="h-[60%] bg-purple-500-800 border-t-laranja border-b-laranja border-t-2 border-b-2 flex">
                 <div className="h-full w-1/6 flex items-center justify-center"><img src={playL} alt="" /></div>
                 <div className="h-full w-2/3 bg-gray-500 m-auto border-r-2 border-l-2 border-r-laranja border-l-laranja">
-                    <iframe src="https://drive.google.com/file/d/1ahb6-kAgaKrPOA6XriTspQabxAm5DSIE/view?usp=sharing" frameBorder="0"></iframe>
+                <iframe src="https://drive.google.com/file/d/16jXqVfOc6vPg8g3Kj1MM5Ixei06pGFTM/preview" className="w-full h-full" allow="autoplay"></iframe>
                 </div>
                 <div className="h-full w-1/6 flex items-center justify-center"><img src={playR} alt="" /></div>
             </section>
