@@ -18,10 +18,12 @@ export default function NlwBoxContent({title, description, stack, thumbnailPath}
     
     return (
         <div className="flex justify-between mx-[150px] mt-20">
-            <div className="h-[371px]">
-                <a onClick={routeChange} className="cursor-pointer"><img src="./src/assets/caixa.svg" alt="caixa onde vai a imagem" /></a>
-                <img className="relative z-1 -top-[340px] left-0.5 w-[495px] h-[310px] overflow-hidden" src={thumbnailPath} alt="nlw" />
-            </div>
+            <a onClick={routeChange} className="cursor-pointer">
+                <div className="h-[371px]">
+                    <img src="./src/assets/caixa.svg" alt="caixa onde vai a imagem" />
+                    <img className="relative z-1 -top-[340px] left-0.5 w-[495px] h-[310px] overflow-hidden" src={thumbnailPath} alt="nlw" />
+                </div>
+            </a>
             <div className="flex flex-col gap-6 items-center justify-center w-[450px]">
                 <Titulo text={title} style={'text-rosinha text-6xl font-russ'} />
                 <p className="text-white font-sasita text-justify text-2xl">{description}</p>
