@@ -48,19 +48,19 @@ function Home() {
       <>
         <main className="h-screen w-screen bg-black">
           <div className="w-screen h-screen bg-bola bg-center bg-no-repeat" id='bg'>
-          <div className='h-3/4 flex flex-row justify-center items-center pt-16'>
-              <div className='flex flex-col w-1/2 pl-[13%]'>
-              <Titulo text="Estudos de Dev"/>
-              <Subtitulo text="Aprenda, evolua."/>
-              <div className='flex justify-center pt-20 select-none'>
-                <Button text="<code/>" icon={play}/>
+            <div className='h-3/4 flex flex-row justify-center items-center pt-16 home-1k:flex-col'>
+              <div className='flex flex-col w-1/2 pl-[13%] home-1k:pl-0 home-1k:items-center home-1k:w-3/4 home-1k:justify-center home-1k:pt-28'>
+                <Titulo text="Estudos de Dev" style='text-white text-6xl font-russ home-630:text-5xl home-510:text-4xl'/>
+                <Subtitulo text="Aprenda, evolua." style="text-rosinha text-4xl font-russ home-510:text-3xl"/>
+                <div className='flex justify-center pt-20 select-none home-1k:pt-96'>
+                  <Button text="<code/>" icon={play}/>
+                </div>
               </div>
+              <div className='w-[35%] flex justify-center select-none home-1k:absolute home-1k:w-80 home-510:w-72' id='logo'>
+                <img src={logo} className="avatar" alt="logo" />
               </div>
-              <div className='w-[35%] flex justify-center select-none' id='logo'>
-              <img src={logo} className="avatar" alt="logo" />
+              <div className='w-[15%]' />
             </div>
-            <div className='w-[15%]' />
-          </div>
           </div>
         </main>
       </>

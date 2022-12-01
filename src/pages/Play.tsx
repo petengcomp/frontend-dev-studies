@@ -2,6 +2,8 @@ import Titulo from "../components/Titulo";
 import playL from "../assets/play2.svg";
 import playR from "../assets/play3.svg";
 import { useEffect, useState } from "react";
+import Subtitulo from "../components/Subtitulo";
+import { useNavigate } from "react-router-dom";
 
 interface Props {
 
@@ -13,6 +15,12 @@ i=0;
 function Play({}: Props){
 
     const [link, setLink] = useState <string>()
+
+    let navigate = useNavigate();
+    const goBack = () => {
+      let path = `/content`;
+      navigate(path);
+    }
     
     useEffect(() => {
         i=0;
@@ -36,7 +44,13 @@ function Play({}: Props){
     return(
         <main id="page" className="h-screen w-screen bg-black flex flex-col opacity-5" style={{transition: "0.5s"}} >
             <section className="h-[15%] flex items-center justify-center">
-                <Titulo text={titulo}/>
+                <section className="w-1/6 flex items-center justify-center">
+                    <a onClick={goBack} className="cursor-pointer hover:opacity-70 transition-opacity"><Subtitulo text="Voltar"/></a>
+                </section>
+                <section className="w-2/3 flex justify-center items-center">
+                    <Titulo text={titulo}/>
+                </section>
+                <section className="w-1/6 flex items-center justify-center"/>
             </section>
             <section className="h-[60%] bg-purple-500-800 border-t-laranja border-b-laranja border-t-2 border-b-2 flex">
                 <div className="h-full w-1/6 flex items-center justify-center"><img className="hover:opacity-75 transition-opacity cursor-pointer" onClick={() => {if(i>0) i--; setLink(links[i])}} src={playL} alt="" /></div>

@@ -6,6 +6,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens:{
+        'home-1k': {'max':"1000px"},
+        'home-630': {'max' : "630px"},
+        'home-510' : {"max" : "510px"}
+      },
       backgroundImage:{
         bola: "url('/bola.png')",
         caixa: "url('/caixa.svg')",
