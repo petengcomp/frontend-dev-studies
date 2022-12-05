@@ -6,24 +6,26 @@ module.exports = {
   ],
   theme: {
     extend: {
-      screens:{
-        'home-1k': {'max':"1000px"},
-        'home-630': {'max' : "630px"},
-        'home-510' : {"max" : "510px"}
+      screens: {
+        'sc-1500': { 'max': "1500px" },
+        'sc-1200': { 'max': "1200px" },
+        'sc-1k': { 'max': "1000px" },
+        'sc-630': { 'max': "630px" },
+        'sc-510': { "max": "510px" }
       },
-      backgroundImage:{
+      backgroundImage: {
         bola: "url('/bola.png')",
         caixa: "url('/caixa.svg')",
         retanguloPlay: "url('/retanguloPlay.svg')"
       },
-      colors:{
+      colors: {
         rosinha: "#FFB3B3",
         roxin: "#3F0250",
         roxinClaro: "rgba(63, 2, 80, 0.64)",
         cinza: "#E2E2E2",
         laranja: "#E7561D"
       },
-      fontFamily:{
+      fontFamily: {
         russ: "'Russo One', sans-serif;",
         sasita: "'Sansita', sans-serif;",
       },
